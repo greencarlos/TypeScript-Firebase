@@ -1,13 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth, Auth } from "firebase/auth";
+import secretKeys from "./secretKeys";
 
-const apiKey = import.meta.env.API_KEY
-const authDomain = process.env.AUTH_DOMAIN
-const projectId = process.env.PROJECT_ID
-const storageBucket = process.env.STORAGE_BUCKET
-const messagingSenderId = process.env.MESSAGE
-const appId = process.env.APP_ID
+const {
+  apiKey,
+  authDomain,
+  projectId,
+  storageBucket,
+  messagingSenderId,
+  appId,
+} = secretKeys;
 
 // todo: add sdks for firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
